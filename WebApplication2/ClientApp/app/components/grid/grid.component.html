@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Angular 2 ag-Grid starter</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        button {
+            font-size: 12px;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="styles.css">-->
+
+
+    <!-- Polyfills -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="https://unpkg.com/zone.js@0.8.17?main=browser"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+
+    <script>
+        var appLocation = '';
+        var boilerplatePath = '';
+        var systemJsMap = { "ag-grid": "https:\/\/unpkg.com\/ag-grid@17.1.1\/dist\/ag-grid.js", "ag-grid\/main": "https:\/\/unpkg.com\/ag-grid@17.1.1\/dist\/ag-grid.js", "ag-grid-enterprise": "https:\/\/unpkg.com\/ag-grid-enterprise@17.1.1\/", "ag-grid-react": "npm:ag-grid-react@17.1.0\/", "ag-grid-angular": "npm:ag-grid-angular@17.1.0\/", "ag-grid-vue": "npm:ag-grid-vue@17.1.0\/" };
+    </script>
+
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System.import('main.ts').catch(function (err) { console.error(err); });
+    </script>
+
+</head>
+<body>
+    <my-app>Loading ag-Grid example&hellip;</my-app>
+</body>
+</html>
